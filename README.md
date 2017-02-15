@@ -1,10 +1,6 @@
 #overwrite-object
 
-[PostCSS] plugin for easily invoking the colors on the [Google Material design color palette].
-
-[PostCSS]: https://github.com/postcss/postcss
-[Gulp]: https://github.com/gulpjs/gulp
-[Google Material design color palette]: https://material.io/guidelines/style/color.html
+A tiny module to merge two objects and overwrite values cleverly.
 
 ## Installation
 
