@@ -1,0 +1,19 @@
+{
+  "name": "overwrite-object",
+  "description": "A tiny module to merge two objects and overwrite values cleverly.",
+  "version": "1.0.0",
+  "maintainers": [
+    {
+      "name": "Arpad Hegedus",
+      "email": "hegedus.arpad@gmail.com",
+      "web": "http://arpadhegedus.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/hegedusarpad/overwrite-object"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/hegedusarpad/overwrite-object/issues"
+  },
+}
