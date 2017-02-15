@@ -1,4 +1,4 @@
-#postcss-google-color
+#overwrite-object
 
 [PostCSS] plugin for easily invoking the colors on the [Google Material design color palette].
 
@@ -9,48 +9,49 @@
 ## Installation
 
 ```js
-npm install postcss-google-color
+npm install overwrite-object
 ```
 
 ## Example
 
-```css
-body {
-    color: google-color(teal, 800);
-}
+```js
+var overwriteObject = require('overwrite-object');
+
+var obj1 = {
+    name: {
+        first: 'John',
+        last: 'Smith'
+    },
+    age: 30,
+    hobbies: [
+        'mountain climbing', 'pets'
+    ]
+};
+var obj2 = {
+    name: {
+        title: 'Mr'
+    },
+    age: 'N.A.',
+    hobbies: [
+        'eating out', 'long walks in the park'
+    ]
+};
+
+var newObj = overwriteObject(obj1, obj2);
 ```
 
 will produce
 
-```css
-body {
-    color: #00695c
-}
-```
-
-## Usage
-
-Using [Gulp].
-
 ```js
-var gulp        = require('gulp'),
-    postcss     = require('gulp-postcss'),
-    googleColor = require('postcss-google-color');
-
-gulp.task('css', function() {
-    gulp.src('path/to/dev-css').
-        .pipe(postcss({
-            // other postcss plugins
-            googleColor
-            // possible options
-            // googleColor({ 
-            //    defaultLevel: 600, 
-            //    fallbackColor: '#ccc' 
-            // })
-        }))
-        .pipe(gulp.dest('path/to/build/css'));
-});
-
-// rest of the gulp file
+var newObj = {
+    name: {
+        first: 'John',
+        last: 'Smith',
+        title: 'Mr'
+    },
+    age: 'N.A.',
+    hobbies: [
+        'mountain climbing', 'pets', 'eating out', 'long walks in the park'
+    ]
+};
 ```
-
