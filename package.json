@@ -1,7 +1,7 @@
 {
   "name": "overwrite-object",
   "description": "A tiny module to merge two objects and overwrite values cleverly.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "maintainers": [
     {
       "name": "Arpad Hegedus",
