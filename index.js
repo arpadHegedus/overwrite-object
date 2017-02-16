@@ -5,7 +5,7 @@ module.exports = function(obj, ...objsToAdd) {
                 if(Array.isArray(v) && Array.isArray(obj[k])) {
                     obj[k].push.apply(obj[k], v);
                 } else if(typeof v === 'object' && typeof obj[k] === 'object') {
-                    obj[k] = objAssign(obj[k], v);
+                    obj[k] = this(obj[k], v);
                 } else {
                     obj[k] = v;
                 }
