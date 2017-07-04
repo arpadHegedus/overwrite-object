@@ -1,5 +1,3 @@
-#overwrite-object
-
 A tiny module to merge two objects and overwrite values cleverly.
 
 ## Installation
